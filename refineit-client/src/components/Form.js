@@ -35,7 +35,7 @@ class Form extends React.Component {
         var generatedKey = ''
         // Si l'user a entré un URL préférentiel, on l'utilise sinon on en génère un
         this.state.preferedAlias !== '' ? generatedKey = this.state.preferedAlias : generatedKey = nanoid(5);
-        var generatedURL = "jlgdevelopment.xyz/" + generatedKey;
+        var generatedURL = "refineit-549b93aec3ac.herokuapp.com/" + generatedKey;
 
         const db = getDatabase();
         set(ref(db, '/' + generatedKey), {
@@ -150,7 +150,7 @@ class Form extends React.Component {
                         <label htmlFor="basic-url"> Votre URL réduite</label>
                         <div className="input-group mb-3">
                             <div className="input-group-prepend">
-                                <span className="input-group-text">jlgdevelopment.xyz/</span>
+                                <span className="input-group-text">refineit-549b93aec3ac.herokuapp.com/</span>
                             </div>
                             <input
                                 id="preferedAlias"
